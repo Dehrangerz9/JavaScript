@@ -17,9 +17,30 @@
     <h1>Iniciando estudos em dom</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
+    <div name="msg2">Dame da ne dame da yo</div>
+    <h1 class="Titulo">Titulo</h1>
     <script>
+        var corpo = window.document.body
+        corpo.style.background = 'lightgray'
+        var p1 = window.document.getElementsByTagName('p')[1]
         window.document.write(window.document.URL)
+        window.document.write('<br>'+window.document.charset)
+        window.document.write('<br>'+window.navigator.appName)
+        p1.style.color = 'blue'
+        window.document.write('<br>'+p1.innerText)
+        window.document.write('<br>'+p1.innerHTML)
+        //var d = window.document.getElementById('msg')
+        //d.style.backgroundColor='red'
+        //d.innerHTML='<strong>Dame da ne dame da yo</strong>'
+        //window.document.getElementById('msg').innerText = 'Utilizando um comando ENORME'
+        //var d = window.document.getElementsByName('msg2')[0]
+        //d.innerHTML='<strong>Dame da ne!!!!</strong>'
+        //var titulo = window.document.getElementsByClassName('Titulo')[0]
+        //titulo.style.color = 'red'
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
     </script>
 </body>
 </html>
