@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Imigração Brasileira</h1>
+    Nacionalidade: <input type="text" id="Nacionalidade">
+    <input type="button" value="Verificar" onclick="nacionalidade()">
+    <div id="ifrase"></div>
+    <script>
+        function nacionalidade(){
+            var nacionalidadet = document.querySelector('input#Nacionalidade')
+            var nacionalidade = (nacionalidadet.value).toString().toLowerCase();
+            var frase = document.getElementById('ifrase')
+            if (nacionalidade == 'brasileiro' || nacionalidade == 'brasil'){
+                frase.innerHTML = '<p> Bem vindo de volta</p>'
+            }else{
+                frase.innerHTML = '<p>Bem vindo ao Brasil</p>'
+            }
+        }
+    </script>
+</body>
+</html>
