@@ -1,0 +1,14 @@
+function contar(){
+   //var Inicio = Number(document.getElementById('Inicio').value)
+  // var Fim = Number(document.getElementById('Fim').value)
+  // var Passo = Number(document.getElementById('Passo').value)
+   var Inicio = 1
+   var Fim = 10
+   var Passo = 1
+//   var res = document.getElementById('res')
+   for(Inicio;Fim;Passo){
+     console.log(Inicio)
+   }
+}
+
+contar()
